@@ -36,7 +36,7 @@ TODO: 自定义相机
      'MLCamera' => ['MLCamera/Assets/*.png']
    }
 
-   s.public_header_files = 'Pod/Classes/**/*.h'
+   s.public_header_files = 'MLCamera/Classes/**/*.h'
 #   s.frameworks = 'UIKit'
    s.dependency 'GPUImage'
    s.dependency 'Masonry', '~> 1.0.2'

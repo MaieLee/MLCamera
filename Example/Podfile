@@ -1,3 +1,6 @@
+source 'https://github.com/MaieLee/MySpec.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 use_frameworks!
 
 target 'MLCamera_Example' do

@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = MaieLee;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = UP3KKM63V2;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -501,6 +504,7 @@
 			baseConfigurationReference = A4D2FA9B103747C3ECA38F32 /* Pods-MLCamera_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UP3KKM63V2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MLCamera/MLCamera-Prefix.pch";
 				INFOPLIST_FILE = "MLCamera/MLCamera-Info.plist";
@@ -516,6 +520,7 @@
 			baseConfigurationReference = 2F6164A6106E710031E0FF04 /* Pods-MLCamera_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UP3KKM63V2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MLCamera/MLCamera-Prefix.pch";
 				INFOPLIST_FILE = "MLCamera/MLCamera-Info.plist";

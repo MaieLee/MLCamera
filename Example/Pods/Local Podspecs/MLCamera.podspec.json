@@ -24,7 +24,7 @@
       "MLCamera/Assets/*.png"
     ]
   },
-  "public_header_files": "Pod/Classes/**/*.h",
+  "public_header_files": "MLCamera/Classes/**/*.h",
   "dependencies": {
     "GPUImage": [
 
