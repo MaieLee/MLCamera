@@ -1,0 +1,36 @@
+{
+  "name": "MLCamera",
+  "version": "1.0.0",
+  "summary": "自定义相机",
+  "description": "TODO: 自定义相机",
+  "homepage": "https://github.com/MaieLee/MLCamera",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "MaieLee": "minggyue123@163.com"
+  },
+  "source": {
+    "git": "https://github.com/MaieLee/MLCamera.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MLCamera/Classes/**/*",
+  "resource_bundles": {
+    "MLCamera": [
+      "MLCamera/Assets/*.png"
+    ]
+  },
+  "public_header_files": "Pod/Classes/**/*.h",
+  "dependencies": {
+    "GPUImage": [
+
+    ],
+    "Masonry": [
+      "~> 1.0.2"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+PODS:
+  - GPUImage (0.1.7)
+  - Masonry (1.0.2)
+  - MLCamera (1.0.0):
+    - GPUImage
+    - Masonry (~> 1.0.2)
+
+DEPENDENCIES:
+  - MLCamera (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GPUImage
+    - Masonry
+
+EXTERNAL SOURCES:
+  MLCamera:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MLCamera: 512ddf4cb02a51f13589d23b23f8cc7ecc9f7996
+
+PODFILE CHECKSUM: 5e7f34a7e590a2c6160e445e67d0e6f664fca54e
+
+COCOAPODS: 1.5.3

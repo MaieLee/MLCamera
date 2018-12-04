@@ -1,0 +1,6 @@
+framework module MLCamera {
+  umbrella header "MLCamera-umbrella.h"
+
+  export *
+  module * { export * }
+}

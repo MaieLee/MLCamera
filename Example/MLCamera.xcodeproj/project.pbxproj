@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		2F6164A6106E710031E0FF04 /* Pods-MLCamera_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLCamera_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MLCamera_Example/Pods-MLCamera_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3C6F4994E82B9809D6D49CA3 /* Pods_MLCamera_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLCamera_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		440DB99D60AD215EE6BA2B9E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		440DB99D60AD215EE6BA2B9E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MLCamera_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLCamera_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,8 +63,8 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		883E2AAC81E49CFE8E2A8D5C /* Pods-MLCamera_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLCamera_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MLCamera_Tests/Pods-MLCamera_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		92EB222FA9D7D52219593304 /* Pods_MLCamera_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLCamera_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		94963D4E01CCD1A9D97BD98E /* MLCamera.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MLCamera.podspec; path = ../MLCamera.podspec; sourceTree = "<group>"; };
-		98F2760E4B3496BECE200AFF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		94963D4E01CCD1A9D97BD98E /* MLCamera.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MLCamera.podspec; path = ../MLCamera.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98F2760E4B3496BECE200AFF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A4D2FA9B103747C3ECA38F32 /* Pods-MLCamera_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLCamera_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MLCamera_Example/Pods-MLCamera_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C40A1CBE5B41EE3B32AB8BB0 /* Pods-MLCamera_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLCamera_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MLCamera_Tests/Pods-MLCamera_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -325,13 +325,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MLCamera_Example/Pods-MLCamera_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
 				"${BUILT_PRODUCTS_DIR}/MLCamera/MLCamera.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLCamera.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
