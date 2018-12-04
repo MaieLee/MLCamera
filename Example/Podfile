@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MLCamera_Example' do
+  pod 'MLCamera', :path => '../'
+
+  target 'MLCamera_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
