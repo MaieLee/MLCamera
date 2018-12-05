@@ -186,9 +186,10 @@
     self.isTakeVideo = NO;
     [self.gpuStillCamera removeAllTargets];
     [self.filter removeAllTargets];
-    
+
     [self.gpuStillCamera addTarget:self.filter];
     [self.filter addTarget:self.gpuImageView];
+    
     dispatch_async(dispatch_get_global_queue(0,0), ^{
         [self.gpuStillCamera startCameraCapture];
         if (!self.isHasInitCamera) {
@@ -261,7 +262,6 @@
         [self.playerLayer removeFromSuperlayer];
         self.playVideoView.hidden = YES;
         
-        [self.gpuVideoCamera stopCameraCapture];
         [self setUpStillCamera];
     }else{
         [self.gpuStillCamera startCameraCapture];
@@ -441,6 +441,7 @@
             self.videoURL = movieURL;
             
             [self.gpuVideoCamera stopCameraCapture];
+            [self.gpuVideoCamera removeAllTargets];
             [self.cameraButton finishSaveVideo];
         });
     }];
