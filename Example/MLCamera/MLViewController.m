@@ -20,7 +20,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
-    self.showImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 60, self.view.frame.size.width*2/3, self.view.frame.size.height*2/3)];
+    self.showImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 80, self.view.frame.size.width*2/3, self.view.frame.size.height*2/3)];
     [self.view addSubview:self.showImageView];
     self.showImageView.center = CGPointMake(self.view.center.x, self.showImageView.center.y);
     
@@ -29,7 +29,7 @@
     [takeBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [takeBtn addTarget:self action:@selector(takePhotoAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:takeBtn];
-    takeBtn.frame = CGRectMake(self.showImageView.frame.origin.x, self.showImageView.frame.origin.y+self.showImageView.frame.size.height+50, self.showImageView.frame.size.width, 90);
+    takeBtn.frame = CGRectMake(self.showImageView.frame.origin.x, self.showImageView.frame.origin.y+self.showImageView.frame.size.height+30, self.showImageView.frame.size.width, 90);
     
     
 }

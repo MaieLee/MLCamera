@@ -257,6 +257,10 @@
 - (void)cancelAction
 {
     if (self.isTakeVideo) {
+        [self.myPlayer pause];
+        [self.playerLayer removeFromSuperlayer];
+        self.playVideoView.hidden = YES;
+        
         [self.gpuVideoCamera stopCameraCapture];
         [self setUpStillCamera];
     }else{
@@ -269,10 +273,6 @@
     self.cameraButton.hidden = NO;
     self.cancelButton.transform = CGAffineTransformMakeTranslation(0, 0);
     self.selectButton.transform = CGAffineTransformMakeTranslation(0, 0);
-    
-    [self.myPlayer pause];
-    [self.playerLayer removeFromSuperlayer];
-    self.playVideoView.hidden = YES;
 }
 
 - (void)selectAction{
