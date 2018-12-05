@@ -7,12 +7,18 @@
 //
 
 #import "MLAppDelegate.h"
+#import "MLViewController.h"
 
 @implementation MLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    UINavigationController *navC = [[UINavigationController alloc] initWithRootViewController:[MLViewController new]];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = navC;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

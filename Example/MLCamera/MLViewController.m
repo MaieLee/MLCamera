@@ -7,6 +7,7 @@
 //
 
 #import "MLViewController.h"
+#import "MyCustomCameraViewController.h"
 
 @interface MLViewController ()
 
@@ -18,6 +19,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    MyCustomCameraViewController *myCustomCamera = [[MyCustomCameraViewController alloc] init];
+    myCustomCamera.cameraFinishBlock = ^(BOOL isTakePic, UIImage *showImage, NSURL *videoURL) {
+        
+    };
+    [self presentViewController:myCustomCamera animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning

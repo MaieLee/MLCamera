@@ -28,6 +28,12 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+    <key>NSCameraUsageDescription</key>
+    <string>“xxx”想使用您的相机进行拍照或视频录制</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>“xxx”想使用您的麦克风进行视频录制</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>“xxx”想获取您的相册使用权限提供照片上传</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

@@ -93,7 +93,7 @@
     NSInteger scale = [[UIScreen mainScreen] scale];
     NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
     NSString *imageName = [NSString stringWithFormat:@"arrow_down_shoot@%dx.png",scale];
-    NSString *path = [currentBundle pathForResource:imageName ofType:nil inDirectory:@"MyCusCamera.bundle"];
+    NSString *path = [currentBundle pathForResource:imageName ofType:nil inDirectory:@"MLCamera.bundle"];
     
     _backButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [_backButton setImage:[UIImage imageWithContentsOfFile:path] forState:UIControlStateNormal];
@@ -101,7 +101,7 @@
     [_backButton addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
     
     imageName = [NSString stringWithFormat:@"back_shoot@%dx.png",scale];
-    path = [currentBundle pathForResource:imageName ofType:nil inDirectory:@"MyCusCamera.bundle"];
+    path = [currentBundle pathForResource:imageName ofType:nil inDirectory:@"MLCamera.bundle"];
     
     _cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [_cancelButton setImage:[UIImage imageWithContentsOfFile:path] forState:UIControlStateNormal];
@@ -110,7 +110,7 @@
     [_cancelButton addTarget:self action:@selector(cancelAction) forControlEvents:UIControlEventTouchUpInside];
     
     imageName = [NSString stringWithFormat:@"confirm_shoot@%dx.png",scale];
-    path = [currentBundle pathForResource:imageName ofType:nil inDirectory:@"MyCusCamera.bundle"];
+    path = [currentBundle pathForResource:imageName ofType:nil inDirectory:@"MLCamera.bundle"];
     _selectButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [_selectButton setImage:[UIImage imageWithContentsOfFile:path] forState:UIControlStateNormal];
     [self.view addSubview:_selectButton];
