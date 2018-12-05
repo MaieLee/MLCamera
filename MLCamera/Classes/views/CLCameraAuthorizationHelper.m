@@ -2,8 +2,8 @@
 //  CLCameraAuthorizationHelper.m
 //  RuShanChuXing
 //
-//  Created by CardLan on 2018/5/31.
-//  Copyright © 2018年 CardLan. All rights reserved.
+//  Created by MyLee on 2018/5/31.
+//  Copyright © 2018年 MyLee. All rights reserved.
 //
 
 #import "CLCameraAuthorizationHelper.h"
